@@ -1,0 +1,286 @@
+#
+# Tabellenstruktur für Tabelle `admin`
+#
+
+CREATE TABLE admin (
+  db_adminid int(10) unsigned NOT NULL auto_increment,
+  db_adminfirma varchar(50) NOT NULL default '',
+  db_adminnachname varchar(50) NOT NULL default '',
+  db_adminvorname varchar(50) NOT NULL default '',
+  db_adminanschrift varchar(50) NOT NULL default '',
+  db_adminplz varchar(10) NOT NULL default '',
+  db_adminort varchar(50) NOT NULL default '',
+  db_admintelefon varchar(50) NOT NULL default '',
+  db_admintelefax varchar(50) NOT NULL default '',
+  db_adminemail varchar(100) NOT NULL default '',
+  db_adminwebseite varchar(100) NOT NULL default '',
+  db_adminmwst varchar(30) NOT NULL default '',
+  db_adminvk varchar(10) NOT NULL default '',
+  db_adminwaehrung varchar(20) NOT NULL default '',
+  db_adminstnr varchar(50) NOT NULL default '',
+  db_adminustid varchar(50) NOT NULL default '',
+  db_adminfinamt varchar(50) NOT NULL default '',
+  db_adminhandelsreg varchar(100) NOT NULL default '',
+  db_adminktoinh varchar(50) NOT NULL default '',
+  db_adminktonr varchar(50) NOT NULL default '',
+  db_adminblz varchar(50) NOT NULL default '',
+  db_adminbank varchar(50) NOT NULL default '',
+  db_adminiban varchar(50) NOT NULL default '',
+  db_adminbic varchar(50) NOT NULL default '',
+  db_adminpaypal varchar(50) NOT NULL default '',
+  db_adminheadimg varchar(100) NOT NULL default '',
+  db_topid1 varchar(10) NOT NULL default '',
+  db_topid2 varchar(10) NOT NULL default '',
+  PRIMARY KEY  (db_adminid)
+) TYPE=MyISAM;
+
+#
+# Daten für Tabelle `admin`
+#
+
+INSERT INTO admin (db_adminid, db_adminfirma, db_adminnachname, db_adminvorname, db_adminanschrift, db_adminplz, db_adminort, db_admintelefon, db_admintelefax, db_adminemail, db_adminwebseite, db_adminmwst, db_adminvk, db_adminwaehrung, db_adminstnr, db_adminustid, db_adminfinamt, db_adminhandelsreg, db_adminktoinh, db_adminktonr, db_adminblz, db_adminbank, db_adminiban, db_adminbic, db_adminpaypal, db_adminheadimg, db_topid1, db_topid2) VALUES (1, 'Online-Shop', 'Mustermann', 'Max', 'Probestr. 55', 'D-00000', 'Beispielstadt', '+49 (000) 1234567', '+49 (000) 1234567', 'ihreMailadresse@www.de', 'http://www.ihreDomain.de', '19', 'ja', 'EUR', '000/000/11111', '123456789', 'Beispielstadt', '', 'Max Muster', '12345678', '10000000', 'Musterbank', '123456789', '123456789', 'ihrePayPalAdresse@www.de', 'head1205066721.png', '2', '43');
+# --------------------------------------------------------
+
+#
+# Tabellenstruktur für Tabelle `basket`
+#
+
+CREATE TABLE basket (
+  db_bid int(10) unsigned NOT NULL auto_increment,
+  db_bsess varchar(200) NOT NULL default '',
+  db_buser varchar(50) NOT NULL default '',
+  db_bartid varchar(10) NOT NULL default '',
+  db_bartikel varchar(100) NOT NULL default '',
+  db_bopt1 varchar(50) NOT NULL default '',
+  db_bopt2 varchar(50) NOT NULL default '',
+  db_bpreis varchar(20) NOT NULL default '',
+  db_bmenge varchar(10) NOT NULL default '',
+  PRIMARY KEY  (db_bid)
+) TYPE=MyISAM;
+
+#
+# Tabellenstruktur für Tabelle `bestellungen`
+#
+
+CREATE TABLE bestellungen (
+  db_bstid int(10) unsigned NOT NULL auto_increment,
+  db_bstts varchar(50) NOT NULL default '',
+  db_bstuserid varchar(10) NOT NULL default '',
+  db_bstmenge longtext NOT NULL,
+  db_bstartikel longtext NOT NULL,
+  db_bstpreis longtext NOT NULL,
+  db_bstges varchar(10) NOT NULL default '',
+  db_bstgesamt varchar(10) NOT NULL default '',
+  db_bstvk varchar(10) NOT NULL default '',
+  db_bstbetrag varchar(10) NOT NULL default '',
+  db_bstnetto varchar(10) NOT NULL default '',
+  db_bstmwst varchar(10) NOT NULL default '',
+  db_bstzahlung varchar(10) NOT NULL default '',
+  db_bstbemerkungen varchar(250) NOT NULL default '',
+  db_bststatus varchar(50) NOT NULL default '',
+  db_bstversand varchar(50) NOT NULL default '',
+  db_bstrechnung varchar(250) NOT NULL default '',
+  PRIMARY KEY  (db_bstid)
+) TYPE=MyISAM;
+
+#
+# Tabellenstruktur für Tabelle `kategorien`
+#
+
+CREATE TABLE kategorien (
+  db_katid int(10) unsigned NOT NULL auto_increment,
+  db_kategorie varchar(50) NOT NULL default '',
+  PRIMARY KEY  (db_katid)
+) TYPE=MyISAM;
+
+#
+# Daten für Tabelle `kategorien`
+#
+
+INSERT INTO kategorien (db_katid, db_kategorie) VALUES (1, 'Kategorie 1'),
+(2, 'Kategorie 2'),
+(3, 'Kategorie 3'),
+(4, 'Kategorie 4'),
+(5, 'Kategorie 5'),
+(6, 'Kategorie 6'),
+(7, 'Kategorie 7'),
+(8, 'Kategorie 8'),
+(9, 'Kategorie 9'),
+(10, 'Kategorie 10'),
+(11, 'Kategorie 11'),
+(12, 'Kategorie 12'),
+(13, 'Kategorie 13'),
+(14, 'Kategorie 14'),
+(15, 'Kategorie 15'),
+(16, 'Kategorie 16');
+# --------------------------------------------------------
+
+#
+# Tabellenstruktur für Tabelle `laender`
+#
+
+CREATE TABLE laender (
+  db_laenderid int(10) unsigned NOT NULL auto_increment,
+  db_laendercode varchar(10) NOT NULL default '',
+  db_land varchar(50) NOT NULL default '',
+  db_vk varchar(20) NOT NULL default '',
+  PRIMARY KEY  (db_laenderid)
+) TYPE=MyISAM;
+
+#
+# Daten für Tabelle `laender`
+#
+
+INSERT INTO laender (db_laenderid, db_laendercode, db_land, db_vk) VALUES (1, 'D', 'Deutschland', '4.50'),
+(2, 'A', '&Ouml;sterreich', '5.50'),
+(4, 'CH', 'Schweiz', '5.50');
+# --------------------------------------------------------
+
+#
+# Tabellenstruktur für Tabelle `login`
+#
+
+CREATE TABLE login (
+  db_logid int(10) unsigned NOT NULL auto_increment,
+  db_logts varchar(50) NOT NULL default '',
+  db_logsess varchar(200) NOT NULL default '',
+  db_logip varchar(100) NOT NULL default '',
+  db_loguser varchar(50) NOT NULL default '',
+  db_logusername varchar(50) NOT NULL default '',
+  PRIMARY KEY  (db_logid)
+) TYPE=MyISAM;
+
+#
+# Tabellenstruktur für Tabelle `shopartikel`
+#
+
+CREATE TABLE shopartikel (
+  db_artid int(10) unsigned NOT NULL auto_increment,
+  db_artkat varchar(10) NOT NULL default '',
+  db_artts varchar(50) NOT NULL default '',
+  db_artnr varchar(30) NOT NULL default '',
+  db_arttitel varchar(100) NOT NULL default '',
+  db_artpreis varchar(10) NOT NULL default '',
+  db_artimg varchar(50) NOT NULL default '',
+  db_artimgw varchar(10) NOT NULL default '',
+  db_artimgh varchar(10) NOT NULL default '',
+  db_artdescr longtext NOT NULL,
+  PRIMARY KEY  (db_artid)
+) TYPE=MyISAM;
+
+#
+# Daten für Tabelle `shopartikel`
+#
+
+INSERT INTO shopartikel (db_artid, db_artkat, db_artts, db_artnr, db_arttitel, db_artpreis, db_artimg, db_artimgw, db_artimgh, db_artdescr) VALUES (1, '3', '1204758000', '', 'Testartikel 3-1', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(2, '3', '1204758000', '', 'Testartikel 3-2', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(3, '3', '1204758000', '', 'Testartikel 3-3', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(4, '3', '1204758000', '', 'Testartikel 3-4', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(5, '3', '1204758000', '', 'Testartikel 3-5', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(6, '3', '1204758000', '', 'Testartikel 3-6', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(7, '4', '1204758000', '', 'Testartikel 4-1', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(8, '4', '1204758000', '', 'Testartikel 4-2', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(9, '4', '1204758000', '', 'Testartikel 4-3', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(10, '4', '1204758000', '', 'Testartikel 4-4', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(11, '4', '1204758000', '', 'Testartikel 4-5', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(12, '4', '1204758000', '', 'Testartikel 4-6', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(13, '5', '1204758000', '', 'Testartikel 5-1', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(14, '5', '1204758000', '', 'Testartikel 5-2', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(15, '5', '1204758000', '', 'Testartikel 5-3', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(16, '5', '1204758000', '', 'Testartikel 5-4', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(17, '5', '1204758000', '', 'Testartikel 5-5', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(18, '5', '1204758000', '', 'Testartikel 5-6', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(19, '6', '1204758000', '', 'Testartikel 6-1', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(20, '6', '1204758000', '', 'Testartikel 6-2', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(21, '6', '1204758000', '', 'Testartikel 6-3', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(22, '6', '1204758000', '', 'Testartikel 6-4', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(23, '6', '1204758000', '', 'Testartikel 6-5', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(24, '6', '1204758000', '', 'Testartikel 6-6', '19.99', '', '', '', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(25, '1', '1204758000', '', 'Testartikel 1-1', '19.99', 'art25.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(26, '1', '1204758000', '', 'Testartikel 1-2', '19.99', 'art26.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(27, '1', '1204758000', '', 'Testartikel 1-3', '19.99', 'art27.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(28, '1', '1204758000', '', 'Testartikel 1-4', '19.99', 'art28.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(29, '1', '1204758000', '', 'Testartikel 1-5', '19.99', 'art29.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(30, '1', '1204758000', '', 'Testartikel 1-6', '19.99', 'art30.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(31, '2', '1204758000', '', 'Testartikel 2-1', '19.99', 'art31.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(32, '2', '1204758000', '', 'Testartikel 2-2', '19.99', 'art32.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(33, '2', '1204758000', '', 'Testartikel 2-3', '19.99', 'art33.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(34, '2', '1204758000', '', 'Testartikel 2-4', '19.99', 'art34.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(35, '2', '1204758000', '', 'Testartikel 2-5', '19.99', 'art35.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel'),
+(36, '2', '1204758000', '', 'Testartikel 2-6', '19.99', 'art36.jpeg', '300', '200', 'keine Beschreibung vorhanden, da Demo-Artikel');
+# --------------------------------------------------------
+
+#
+# Tabellenstruktur für Tabelle `texte`
+#
+
+CREATE TABLE texte (
+  db_txtid int(10) unsigned NOT NULL auto_increment,
+  db_txtcontent longtext NOT NULL,
+  PRIMARY KEY  (db_txtid)
+) TYPE=MyISAM;
+
+#
+# Daten für Tabelle `texte`
+#
+
+INSERT INTO texte (db_txtid, db_txtcontent) VALUES (1, '<b>Diese Seite wird betrieben von:</b><br><br>Max Muster<br>Probestr. 55<br>D-00000 Beispielstadt<br><br>Telefon: +49 000 1234567<br>E-Mail: ihreMail@www.de<br><br>Ust-IdNr: 123456789<br>Finanzamt: Beispielstadt'),
+(2, 'Trotz sorgf&auml;ltiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links &uuml;bernommen. F&uuml;r den Inhalt der verlinkten Webseiten sind ausschlie&szlig;lich deren Betreiber verantwortlich.'),
+(3, 'Die verwendeten Texte und Grafiken sowie das Layout und ein Teil der Bilder unterliegen weltweitem Urheberrecht. Die unerlaubte Verwendung, Reproduktion oder Weitergabe einzelner Inhalte oder kompletter Seiten ist untersagt. Dies gilt ebenso für die unerlaubte Einbindung einzelner Inhalte oder kompletter Seiten auf Internetseiten anderer Betreiber.'),
+(4, '<p><b>1. Lieferzeiten</b><br>Alle Artikel werden umgehend, sofern ab Lager verf&uuml;gbar, ausgeliefert. Ansonsten betr&auml;gt die Lieferzeit in der Regel bis zu 7 Werktage. Sollte ein Artikel nicht kurzfristig verf&uuml;gbar sein, informieren wir Sie per e-Mail &uuml;ber die zu erwartende Lieferzeit. Wegen Lieferungsverz&ouml;gerungen, wie z.B. durch h&ouml;here Gewalt, Verkehrsst&ouml;rungen und Verf&uuml;gungen von hoher Hand sowie sonstigen von uns nicht zu vertretenden Ereignissen, kann kein Schadensersatzanspruch gegen uns erhoben werden.<br><br><b>2. Verpackungs- und Versandkosten</b><br>F&uuml;r Lieferung und Verpackung (Versandkosten) berechnen wir einen einmaligen Pauschalbetrag. Die Versandkosten sind abh&auml;ngig vom Land in das geliefert werden soll. Die aktuellen Versandkosten finden Sie unter <a href=\'zahlung.php?sess=$sess&amp;ts=$ts\'>Zahlung und Versand</a> auf unserer Webseite.<br><br><b>3. Zahlung</b><br>Die Zahlung ist per PayPal oder Vorkasse (von Ihnen vorab get&auml;tigte &Uuml;berweisungen auf unserer Konto) m&ouml;glich. Bei Zahlung per Vorkasse erhalten Sie von uns eine e-Mail mit den genauen Rechnungsdaten. Bitte geben Sie bei Ihrer &Uuml;berweisung als Verwendungszweck Ihren Namen und die Rechnungsnummer mit an damit wir Ihren Zahlungs- eingang der Bestellung zuordnen k&ouml;nnen. Eine Zahlung per Rechnung ist erst bei l&auml;ngerer Gesch&auml;ftsbeziehung m&ouml;glich. Bis zur vollst&auml;ndigen Bezahlung bleiben die gelieferten Waren unser Eigentum (Eigentumsvorbehalt nach § 455 BGB). Rechnungen sind sofort nach Erhalt ohne jeden Abzug zahlbar. Bei &uuml;berschreiten der vereinbarten Zahlungsfristen m&uuml;ssen wir Mahn- und Bearbeitungsgeb&uuml;hren berechnen.<br><br><b>4. Vertragsabschluss</b><br>Die Darstellung der Produkte im Onlineshop stellen kein rechtlich bindendes Angebot, sondern einen unverbindlichen Onlinekatalog dar. Durch Anklicken des Buttons "Bestellung senden" geben Sie eine verbindliche Bestellung der im Warenkorb enthaltenen Waren ab. Die Best&auml;tigung des Eingangs Ihrer Bestellung erfolgt zusammen mit der Annahme der Bestellung kurzfristig nach dem Absenden durch eine automatisierte E-Mail. Mit Absenden der E-Mail-Best&auml;tigung ist der Kaufvertrag zustande gekommen.<br><br><b>5. Widerrufsrecht</b><br>Als Verbraucher k&ouml;nnen Sie Ihre Vertragserkl&auml;rung innerhalb von einem Monat ohne Angabe von Gr&uuml;nden in Textform (z.B. Brief, E-Mail, Fax) oder durch R&uuml;cksendung der Sache widerrufen. Die Frist beginnt fr&uuml;hestens mit Erhalt der Ware und mit Erhalt einer in Textform noch gesondert mitzuteilenden Widerrufsbelehrung. Zur Wahrung der Widerrufsfrist gen&uuml;gt die rechtzeitige Absendung des Widerrufs oder der Ware. Der Widerruf ist zu richten an:<br><br>Max Muster<br>Probestr. 55<br>D-00000 Beispielstadt<br><br>Telefax: +49 000 1234567<br>E-Mail: ihreMail@www.de<br><br><b>6. Widerrufsfolgen</b><br>Im Falle eines wirksamen Widerrufs sind die beiderseits empfangenen Leistungen zur&uuml;ckzugew&auml;hren und gegebenenfalls gezogene Nutzungen (z.B. Zinsen) herauszugeben. Paketversandf&auml;hige Sachen sind zur&uuml;ckzusenden. Sie haben die Kosten der R&uuml;cksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zur&uuml;ckzusendenden Ware einen Betrag von 40,- Euro nicht &uuml;bersteigt oder wenn Sie bei einem h&ouml;heren Preis des Kaufgegenstands zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich vereinbarte Teilzahlung erbracht haben. Anderenfalls ist die R&uuml;cksendung f&uuml;r Sie kostenfrei. Nicht paketversandf&auml;hige Sachen werden bei Ihnen abgeholt. Verpflichtungen zur Erstattung von Zahlungen m&uuml;ssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserkl&auml;rung erf&uuml;llen.<br><br><b>7. Besonderheiten</b><br>Das Widerrufsrecht besteht nicht bei Fernabsatzvertr&auml;gen zur Lieferung von Audio- oder Videoaufzeichnungen oder von Software, sofern die gelieferten Datentr&auml;ger vom Verbraucher entsiegelt worden sind. Ebenso besteht das Widerrufsrecht nicht bei erworbenen Domains, wenn die Domain bereits auf den K&auml;ufer &uuml;berschrieben (Inhaberwechsel) oder vom K&auml;ufer ein Providerwechsel eingeleitet und durch uns akzeptiert wurde.<br>Handelt der K&auml;ufer in Aus&uuml;bung seiner gewerblichen oder selbst&auml;ndigen beruflichen T&auml;tigkeit, ist er laut §14 BGB Unternehmer, demzufolge steht ihm kein Widerrufsrecht zu.<br><br><b>8. Gew&auml;hrleistung</b><br>Sollten Transportsch&auml;den an der Ware festgestellt werden, hat der Empf&auml;nger unverz&uuml;glich Schadensmeldung gegen&uuml;ber dem Frachtf&uuml;hrer (Versanddienst) zu machen. Sonstige erkennbare Transportsch&auml;den sind l&auml;ngstens innerhalb von 8 Tagen nach Erhalt der Ware uns gegen&uuml;ber schriftlich geltend zu machen. Wir haften nicht f&uuml;r M&auml;ngel die infolge fehlerhafter Handhabung, normaler Abnutzung oder durch Fremdeinwirkung entstanden sind. Datentr&auml;ger werden von uns auf Funktionalit&auml;t getestet, wir &uuml;bernehmen keine Gew&auml;hr f&uuml;r den einwandfreien Betrieb auf dem System des Empf&auml;ngers.<br><br><b>9. Datenschutz</b><br>Die von Ihnen &uuml;bermittelten Daten werden von uns ausschlie&szlig;lich nur zur Abwicklung Ihrer Bestellungen verwendet. Alle Ihre Daten werden von uns streng vertraulich behandelt. Eine Weitergabe der Daten an Dritte (z.B. Versanddienste) erfolgt nicht. Jedoch &uuml;bernehmen wir keine Haftung f&uuml;r die Datensicherheit w&auml;hrend der &Uuml;bertragungen &uuml;ber das Internet (z.B. wegen technischer Fehler des Providers) oder f&uuml;r einen eventuellen kriminellen Zugriff Dritter auf Dateien unserer Internet- pr&auml;senz.<br><br><b>10. Copyright</b><br>S&auml;mtliche auf diesen Seiten dargestellten Fotos, Logos, Texte, Berichte, Scripte und Programmierroutinen d&uuml;rfen nicht ohne unser Einverst&auml;ndnis kopiert oder anderweitig genutzt werden. Ein Abspeichern, Herunterladen, Kopieren, Ausdrucken bzw. Vervielf&auml;ltigen, Ver&ouml;ffentlichen oder Weitergeben an Dritte von Seiten, Dateien, Inhalten, Bildern und Grafiken ist nur mit ausdr&uuml;cklicher schriftlicher Genehmigung (z.B. Resellerlizenz) durch uns erlaubt.<br><br><b>11. G&uuml;ltigkeit der AGB</b><br>Mit einer Bestellung werden unsere Allgemeinen Gesch&auml;ftsbedingungen anerkannt. Sollte eine Bestimmung dieser Allgemeinen Gesch&auml;ftsbedingungen, aus welchem Grund auch immer, nichtig sein, bleibt die Geltung der &uuml;brigen Bestimmungen hiervon unber&uuml;hrt. M&uuml;ndliche Absprachen bed&uuml;rfen der schriftlichen Best&auml;tigung. Erf&uuml;llungsort und Gerichtsstand ist, soweit gesetzlich nicht anders geregelt, Beispielstadt.<br><br><i>Beispielstadt, den 09.03.2008</i></p>   '),
+(5, '<p><b>1. Widerrufsrecht</b><br>Als Verbraucher k&ouml;nnen Sie Ihre Vertragserkl&auml;rung innerhalb von einem Monat ohne Angabe von Gr&uuml;nden in Textform (z.B. Brief, E-Mail, Fax) oder durch R&uuml;cksendung der Sache widerrufen. Die Frist beginnt fr&uuml;hestens mit Erhalt der Ware und mit Erhalt einer in Textform noch gesondert mitzuteilenden Widerrufsbelehrung. Zur Wahrung der Widerrufsfrist gen&uuml;gt die rechtzeitige Absendung des Widerrufs oder der Ware. Der Widerruf ist zu richten an:<br><br>Max Muster<br>Probestr. 55<br>D-00000 Beispielstadt<br><br>Telefax: +49 000 1234567<br>E-Mail: ihreMail@www.de<br><br><b>2. Widerrufsfolgen</b><br>Im Falle eines wirksamen Widerrufs sind die beiderseits empfangenen Leistungen zur&uuml;ckzugew&auml;hren und gegebenenfalls gezogene Nutzungen (z.B. Zinsen) herauszugeben. Paketversandf&auml;hige Sachen sind zur&uuml;ckzusenden. Sie haben die Kosten der R&uuml;cksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zur&uuml;ckzusendenden Ware einen Betrag von 40,- Euro nicht &uuml;bersteigt oder wenn Sie bei einem h&ouml;heren Preis des Kaufgegenstands zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich vereinbarte Teilzahlung erbracht haben. Anderenfalls ist die R&uuml;cksendung f&uuml;r Sie kostenfrei. Nicht paketversandf&auml;hige Sachen werden bei Ihnen abgeholt. Verpflichtungen zur Erstattung von Zahlungen m&uuml;ssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserkl&auml;rung erf&uuml;llen.<br><br><b>3. Besonderheiten</b><br>Das Widerrufsrecht besteht nicht bei Fernabsatzvertr&auml;gen zur Lieferung von Audio- oder Videoaufzeichnungen oder von Software, sofern die gelieferten Datentr&auml;ger vom Verbraucher entsiegelt worden sind. Ebenso besteht das Widerrufsrecht nicht bei erworbenen Domains, wenn die Domain bereits auf den K&auml;ufer &uuml;berschrieben (Inhaberwechsel) oder vom K&auml;ufer ein Providerwechsel eingeleitet und durch uns akzeptiert wurde.<br>Handelt der K&auml;ufer in Aus&uuml;bung seiner gewerblichen oder selbst&auml;ndigen beruflichen T&auml;tigkeit, ist er laut §14 BGB Unternehmer, demzufolge steht ihm kein Widerrufsrecht zu.</p>'),
+(6, '<p><b>&Uuml;berweisung / Vorkasse:</b><br>Nach Ihrer Bestellung erhalten Sie per e-Mail eine Bestellbest&auml;tigung mit unserer Bankverbindung. Wenn der Rechnungsbetrag unserem Konto gutgeschrieben wurde, erfolgt umgehend die Lieferung der bestellten Artikel.<br><br><b>Zahlung per PayPal:</b><br>Wenn Sie bei der Bestellung die Zahlungsart PayPal w&auml;hlen, wird auf der Best&auml;tigungsseite der PayPal-Zahlungs-Button angezeigt. Mit Klick auf diesen Button gelangen Sie direkt zur Webseite von PayPal.<br>Sobald uns der Zahlungseingang von PayPal mitgeteilt wurde, erfolgt die Lieferung umgehend.</p>'),
+(7, 'Herzlich willkommen in unserem Onlineshop!'),
+(8, '<p>Hier setzen Sie den Text f&uuml;r Ihre Startseite ein...  Hier setzen Sie den Text f&uuml;r Ihre Startseite ein... Hier setzen Sie den Text f&uuml;r Ihre Startseite ein... Hier setzen Sie den Text f&uuml;r Ihre Startseite ein... Hier setzen Sie den Text f&uuml;r Ihre Startseite ein...</p>'),
+(9, '© 2008 ihreDomain.de - Alle Rechte vorbehalten!'),
+(10, 'In unserem Onlineshop finden Sie alles was das Herz begehrt. usw. usw. usw. .....'),
+(11, 'onlineshop, shop, billig, waren1, waren2, kategorie1, usw.');
+# --------------------------------------------------------
+
+#
+# Tabellenstruktur für Tabelle `topartikel`
+#
+
+CREATE TABLE topartikel (
+  db_topid int(10) unsigned NOT NULL auto_increment,
+  db_topart varchar(10) NOT NULL default '',
+  db_toptitel varchar(100) NOT NULL default '',
+  db_toppreis varchar(10) NOT NULL default '',
+  db_topimg varchar(100) NOT NULL default '',
+  db_topimgw varchar(10) NOT NULL default '',
+  db_topimgh varchar(10) NOT NULL default '',
+  PRIMARY KEY  (db_topid)
+) TYPE=MyISAM;
+
+#
+# Daten für Tabelle `topartikel`
+#
+
+INSERT INTO topartikel (db_topid, db_topart, db_toptitel, db_toppreis, db_topimg, db_topimgw, db_topimgh) VALUES (4, '35', 'Testartikel 2-5', '19.99', 'art35.jpeg', '300', '200'),
+(3, '36', 'Testartikel 2-6', '19.99', 'art36.jpeg', '300', '200');
+# --------------------------------------------------------
+
+#
+# Tabellenstruktur für Tabelle `user`
+#
+
+CREATE TABLE user (
+  db_userid int(10) unsigned NOT NULL auto_increment,
+  db_userts varchar(50) NOT NULL default '',
+  db_userpass varchar(250) NOT NULL default '',
+  db_useranrede varchar(10) NOT NULL default '',
+  db_usernachname varchar(50) NOT NULL default '',
+  db_uservorname varchar(50) NOT NULL default '',
+  db_useranschrift varchar(50) NOT NULL default '',
+  db_userplz varchar(10) NOT NULL default '',
+  db_userort varchar(50) NOT NULL default '',
+  db_userland varchar(50) NOT NULL default '',
+  db_usertelefon varchar(50) NOT NULL default '',
+  db_useremail varchar(100) NOT NULL default '',
+  PRIMARY KEY  (db_userid)
+) TYPE=MyISAM;
+
+
+
+
+
