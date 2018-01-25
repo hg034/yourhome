@@ -14,6 +14,7 @@ $db_txtcontent11 = $row['db_txtcontent'];
 print ("
 <html>
 <head>
+
 <title>Onlineshop</title>
 <meta name='description' content='$db_txtcontent10'>
 <meta name='keywords' content='$db_txtcontent11'>
@@ -25,6 +26,7 @@ print ("
 <meta name='REVISIT-AFTER' content='7 days'>
 <meta http-equiv='Pragma' content='no-cache'>
 <meta http-equiv='Cache-Control' content='no-cache'>
+<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
 <link rel='stylesheet' href='style.css' type='text/css'>
 </head>
 <body background=#fff >
