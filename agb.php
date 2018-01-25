@@ -16,4 +16,3 @@ include("include/right.php");
 include("include/footer.php");
 mysqli_close($verbindung);
 ?>
-test1
