@@ -1,52 +1,41 @@
 <?php
 print ("<html>
 <head>
-	<link rel='stylesheet' href='../style_neu.css'>
+	<link rel='stylesheet' type='text/css' >
 </head>
 ");
 print ("
-<tr><td class='tdleft'>Allgemein:</td></tr>
+<tr><td id='navhead1' class='lead'>Kategorien</td></tr>
 <tr><td id='space' height=10>&nbsp;</td></tr>
-<tr><td height=18><a href='index.php' class='a1'>&#8226; Admindaten</a></td></tr>
-<tr><td height=18><a href='zahlung.php?action=1' class='a1'>&#8226; Zahlungsdaten</a></td></tr>
-<tr><td height=18><a href='versand.php?action=1' class='a1'>&#8226; Versandkosten</a></td></tr>
-<tr><td height=18><a href='kategorien.php?action=1' class='a1'>&#8226; Kategorien</a></td></tr>
-<tr><td height=18><a href='headergrafik.php?action=1' class='a1'>&#8226; Headergrafik</a></td></tr>
+");
+$sqlk0 = "SELECT * FROM kategorien";
+$resk0 = mysqli_query($verbindung, $sqlk0);
+$k0 = mysqli_num_rows($resk0);
+$x=1;
+$sqlk1 = "SELECT * FROM kategorien";
+$resk1 = mysqli_query($verbindung, $sqlk1);
+while($row = mysqli_fetch_assoc($resk1)) {
+    $db_katid = $row['db_katid'];
+    $db_kategorie = $row['db_kategorie'];
+    if ($x!=$k0) { $tabid="navi1"; } else { $tabid="navi1a"; }
+    print ("<tr><td id='$tabid'><a href='content.php?kat=$db_katid&sess=$sess&ts=$ts&next=0&page=1' class='lead'>$db_kategorie</a></td></tr>");
+    $x++;
+}
+print ("
 <tr><td id='space' height=10>&nbsp;</td></tr>
-<tr><td class='tdleft'>Artikel:</td></tr>
+<tr><td id='navhead2' class='lead'>Wir akzeptieren</td></tr>
 <tr><td id='space' height=10>&nbsp;</td></tr>
-<tr><td height=18><a href='artikel.php?action=1&next=0&page=1' class='a1'>&#8226; alle Artikel</a></td></tr>
-<tr><td height=18><a href='artikel.php?action=2&kat=0&next=0&page=1' class='a1'>&#8226; nach Kategorien</a></td></tr>
-<tr><td height=18><a href='newartikel.php?action=1' class='a1'>&#8226; neuer Artikel</a></td></tr>
-<tr><td height=18><a href='topartikel.php?action=1' class='a1'>&#8226; Top-Artikel</a></td></tr>
-<tr><td id='space' height=10>&nbsp;</td></tr>
-<tr><td class='tdleft'>Texte:</td></tr>
-<tr><td id='space' height=10>&nbsp;</td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=1' class='a1'>&#8226; Impressum</a></td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=2' class='a1'>&#8226; Disclaimer</a></td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=3' class='a1'>&#8226; Copyright</a></td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=4' class='a1'>&#8226; AGB</a></td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=5' class='a1'>&#8226; Widerrufsrecht</a></td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=6' class='a1'>&#8226; Zahlung/Versand</a></td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=7' class='a1'>&#8226; Header Startseite</a></td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=8' class='a1'>&#8226; Text Startseite</a></td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=9' class='a1'>&#8226; Fusszeile</a></td></tr>
-<tr><td id='space' height=10>&nbsp;</td></tr>
-<tr><td class='tdleft'>Meta-Tags:</td></tr>
-<tr><td id='space' height=10>&nbsp;</td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=10' class='a1'>&#8226; description</a></td></tr>
-<tr><td height=18><a href='texte.php?action=1&id=11' class='a1'>&#8226; keywords</a></td></tr>
-
-</table>
+<tr><td align=center height=70>
+<!-- PayPal Logo --><a href='https://www.paypal.com/de/cgi-bin/webscr?cmd=xpt/cps/popup/OLCWhatIsPayPal-outside' target='_blank' onFocus='if (this.blur) this.blur()'><img src='https://www.paypal.com/de_DE/DE/i/logo/lockbox_150x50.gif' width=150 height=50 border='0' alt='PayPal-Bezahlmethoden-Logo'></a><!-- PayPal Logo -->
 </td></tr>
-<tr><td>&nbsp;</td></tr>
 </table>
 </td>
-<td width=600 bgcolor='#FFFFFF' valign=top>
-<table width=600 border=0 cellpadding=0 cellspacing=0>
-<tr><td height=15>&nbsp;</td></tr>
-<tr><td>
-<table width=560 align=center border=0 cellpadding=0 cellspacing=0>
+<td width=10 id='space'>&nbsp;</td>
+<td id='tabmiddle' valign=top>
+<table border=0 cellpadding=0 cellspacing=0 id='tablemiddle'>
+<tr><td id='conthead1'>$header</td></tr>
+<tr><td id='space' height=10>&nbsp;</td></tr>
+<tr><td valign=top id='tabcontent1'>
+<table align=center border=0 cellpadding=0 cellspacing=0 id='tablecontent'>
 ");
-
 ?>
