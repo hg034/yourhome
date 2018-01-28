@@ -1,5 +1,9 @@
 <?php
-
+print ("<html>
+<head>
+	<link rel='stylesheet' href='../style_neu.css'>
+</head>
+");
 print ("
 <tr><td class='tdleft'>Allgemein:</td></tr>
 <tr><td id='space' height=10>&nbsp;</td></tr>

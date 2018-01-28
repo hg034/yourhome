@@ -38,7 +38,7 @@ p { font-family:Verdana; font-size:10pt; color:#666666; text-align:justify;}
 .p1 { font-family:Verdana; font-size:8pt; color:#666666; text-align:justify;}
 a { font-family:Verdana; font-size:10pt; color:#551111; text-decoration:none; }
 .aklein { font-family:Verdana; font-size:8pt; color:#551111; text-decoration:none; }
-.a1 { font-family:Verdana; font-size:9pt; color:#551111; text-decoration:none; }
+.a1 { font-family:Verdana; font-size:30pt; color:#551111; text-decoration:none; }
 .a1:hover { font-family:Verdana; font-size:9pt; color:#000000; text-decoration:none; }
 .aaktiv { font-family:Verdana; font-size:9pt; color:#666666; text-decoration:none; }
 .aaktiv:hover { font-family:Verdana; font-size:9pt; color:#000000; text-decoration:none; }
@@ -46,35 +46,35 @@ a { font-family:Verdana; font-size:10pt; color:#551111; text-decoration:none; }
 .ainaktiv:hover { font-family:Verdana; font-size:9pt; color:#000000; text-decoration:none; }
 /* Formularfelder und Buttons */
 .tf {
-border: #918F8F 1px solid;
-font-family: Verdana;
-font-size: 8pt;
-color: #2E1E22;
-background-color: #FFFFFF;
-height:16px;
+    border: #918F8F 1px solid;
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #2E1E22;
+    background-color: #FFFFFF;
+    height:16px;
 }
 .tf1 {
-border: #918F8F 1px solid;
-font-family: Verdana;
-font-size: 8pt;
-color: #2E1E22;
-background-color: #FFFFFF;
+    border: #918F8F 1px solid;
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #2E1E22;
+    background-color: #FFFFFF;
 }
 .tfbsk1 {
-border: #918F8F 1px solid;
-font-family: Verdana;
-font-size: 8pt;
-color: #2E1E22;
-text-align:center;
-background-color: #FFFFFF;
-height:16px;
+    border: #918F8F 1px solid;
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #2E1E22;
+    text-align:center;
+    background-color: #FFFFFF;
+    height:16px;
 }
 .bt {
-border: #918F8F 1px solid;
-font-family: Verdana;
-font-size: 8pt;
-color: #2E1E22;
-background-color: #CCCCCC;
-height:20px;
-cursor:pointer;
+    border: #918F8F 1px solid;
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #2E1E22;
+    background-color: #CCCCCC;
+    height:20px;
+    cursor:pointer;
 }
