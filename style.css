@@ -1,80 +1,34 @@
-#space { font-size:1px; }
-#tabletop { width:880px; border:1px solid #CCCCCC; }
-#tablebott { width:880px; border:1px solid #CCCCCC;  background:#FFFFFF;}
-#tableges { width:880px; }
-#tableleft { width:200px; }
-#tablemiddle { width:500px; }
-#tableright { width:160px; }
-#tableright1 { width:150px; }
-#tablecontent { width:480px; }
-#tableft { width:200px; height:504px; border:1px solid #CCCCCC; background:#FFFFFF;}
-#tabmiddle { width:500px; height:504px; border:1px solid #CCCCCC;  background:#FFFFFF;}
-#tabright { width:160px; height:504px; border:1px solid #CCCCCC;  background:#FFFFFF;}
-/* seiten mit seitenzahlen hoehe= hoehe von tableft usw. minus 60 */
-#tabcontent1 { width:500px; height:444px; }
-/* seiten ohne seitenzahlen hoehe= hoehe von tableft usw. minus 40 */
-#tabcontent2 { width:500px; height:464px; }
-/* artikelzeile */
-#tabartikel { width:480px; height:100px; background:#EFEFEF;}
-/* artikel auf startseite */
-#toptab {width:150px; height:140px; border:1px solid #CCCCCC;}
-/* Ueberschriften */
-#navhead1 { font-family:Verdana; font-size:10pt; color:#000000; font-weight:bold; background: url(img/navihg.png); border-bottom:1px solid #CCCCCC; height:25px; padding-left:5px;}
-#navhead2 { font-family:Verdana; font-size:10pt; color:#000000; font-weight:bold; background: url(img/navihg.png); border-bottom:1px solid #CCCCCC; border-top:1px solid #CCCCCC; height:25px; padding-left:5px;}
-#conthead1 { font-family:Verdana; font-size:10pt; color:#636363; font-weight:bold; background:#EFEFEF; border-bottom:1px solid #CCCCCC; height:25px; padding-left:10px; }
-#conthead2 { font-family:Verdana; font-size:10pt; color:#636363; font-weight:bold; background:#EFEFEF; height:20px; }
-/* Navigation */
-#navi1 { font-family:Verdana; font-size:10pt; color:#000000; height:22px; padding-left:5px; border-bottom:1px solid #DFDFDF;}
-#navi1a { font-family:Verdana; font-size:10pt; color:#000000; height:22px; padding-left:5px; }
-/* allgemein */
-#linebsk {background: url(img/line_bsk1.png);}
-#descr { font-family:Verdana; font-size:10pt; color:#666666; padding-left:5px; padding-right:5px;}
-td { font-family:Verdana; font-size:10pt; color:#666666; }
-.tdklein { font-family:Verdana; font-size:8pt; color:#666666; }
-.tdkleinf { font-family:Verdana; font-size:8pt; color:#551111; }
-.td1 { font-family:Verdana; font-size:10pt; color:#551111; }
-.tdf { font-family:Verdana; font-size:10pt; color:#551111; }
-p { font-family:Verdana; font-size:10pt; color:#666666; text-align:justify;}
-.p1 { font-family:Verdana; font-size:8pt; color:#666666; text-align:justify;}
-a { font-family:Verdana; font-size:10pt; color:#551111; text-decoration:none; }
-.aklein { font-family:Verdana; font-size:8pt; color:#551111; text-decoration:none; }
-.a1 { font-family:Verdana; font-size:30pt; color:#551111; text-decoration:none; }
-.a1:hover { font-family:Verdana; font-size:9pt; color:#000000; text-decoration:none; }
-.aaktiv { font-family:Verdana; font-size:9pt; color:#666666; text-decoration:none; }
-.aaktiv:hover { font-family:Verdana; font-size:9pt; color:#000000; text-decoration:none; }
-.ainaktiv { font-family:Verdana; font-size:9pt; color:#551111; text-decoration:none; }
-.ainaktiv:hover { font-family:Verdana; font-size:9pt; color:#000000; text-decoration:none; }
-/* Formularfelder und Buttons */
-.tf {
-    border: #918F8F 1px solid;
-    font-family: Verdana;
-    font-size: 8pt;
-    color: #2E1E22;
-    background-color: #FFFFFF;
-    height:16px;
+.lead {color: blue;}
+td, h4 {font-family: 'Raleway', sans-serif;}
+
+html {
+    position: relative;
+    min-height: 100%;
 }
-.tf1 {
-    border: #918F8F 1px solid;
-    font-family: Verdana;
-    font-size: 8pt;
-    color: #2E1E22;
-    background-color: #FFFFFF;
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 40px;
 }
-.tfbsk1 {
-    border: #918F8F 1px solid;
-    font-family: Verdana;
-    font-size: 8pt;
-    color: #2E1E22;
-    text-align:center;
-    background-color: #FFFFFF;
-    height:16px;
+#footer {
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+
+    height: 280px;
+    background-color: #d7e9e7 ;
 }
-.bt {
-    border: #918F8F 1px solid;
-    font-family: Verdana;
-    font-size: 8pt;
-    color: #2E1E22;
-    background-color: #CCCCCC;
-    height:20px;
-    cursor:pointer;
+/* Custom footer CSS
+-------------------------------------------------- */
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
 }
+.container .text-muted {
+    margin: 20px 0;
+}
+.footertext {
+    color: #000000;
+}
+
