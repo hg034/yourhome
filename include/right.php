@@ -24,25 +24,22 @@ if ($zbas3 != '0') {
 $bgesamt1 = sprintf("%01.2f", $bgesamt1);
 print ("
 <tr><td id='navhead1' class='lead'>Warenkorb</td></tr>
-<tr><td id='space' height=10>&nbsp;</td></tr>
-<tr><td>
-<table id='tableright1' align=center border=0 cellpadding=0 cellspacing=0>
-<tr height=20><td width=75 class='lead'>Artikel</td><td width=75 align=right class='lead'>$bmengeges</td></tr>
-<tr height=20><td width=75 class='lead'>$db_adminwaehrung</td><td width=75 align=right class='lead'>$bgesamt1</td></tr>
-<tr><td id='space' height=3>&nbsp;</td></tr>
-<tr><td colspan=2><a href='warenkorb.php?sess=$sess&ts=$ts&kat=0&artikel=0&next=0&page=0&back=index&action=view'><img src='img/bt_basket1.png' width='150' height='22' border='0'></a></td></tr>
+	<tr><td id='space' height=10>&nbsp;</td></tr>
+	<tr><td>
+	<table id='tableright1' align=center border=0 cellpadding=0 cellspacing=0>
+	<tr height=20><td width=75 class='lead'>Artikel</td><td width=75 align=right class='lead'>$bmengeges</td></tr>
+	<tr height=20><td width=75 class='lead'>$db_adminwaehrung</td><td width=75 align=right class='lead'>$bgesamt1</td></tr>
+	<tr><td id='space' height=3>&nbsp;</td></tr>
+	<tr><td colspan=2><a href='warenkorb.php?sess=$sess&ts=$ts&kat=0&artikel=0&next=0&page=0&back=index&action=view'><img src='img/bt_basket1.png' width='150' height='22' border='0'></a></td></tr>
 </table>
 </td></tr>
 <tr><td id='space' height=10>&nbsp;</td></tr>
+
 <tr><td id='navhead2' class='lead'>Shopinformationen</td></tr>
 <tr><td id='space' height=10>&nbsp;</td></tr>
 <tr><td id='navi1'><a href='index.php?sess=$sess&ts=$ts'  onFocus='if (this.blur) this.blur()'class='lead'>Startseite</a></td></tr>
-<tr><td id='navi1'><a href='zahlung.php?sess=$sess&ts=$ts'  onFocus='if (this.blur) this.blur()'class='lead'>Zahlung und Versand</a></td></tr>
-<tr><td id='navi1'><a href='widerrufsrecht.php?sess=$sess&ts=$ts'  onFocus='if (this.blur) this.blur()'class='lead'>Widerrufsrecht</a></td></tr>
-<tr><td id='navi1'><a href='agb.php?sess=$sess&ts=$ts'  onFocus='if (this.blur) this.blur()'class='lead'>AGB</a></td></tr>
-<tr><td id='navi1'><a href='impressum.php?sess=$sess&ts=$ts' onFocus='if (this.blur) this.blur()'class='lead'>Impressum</a></td></tr>
-<tr><td id='navi1a'><a href='kontakt.php?sess=$sess&ts=$ts&action=1' onFocus='if (this.blur) this.blur()' class='lead'>Kontakt</a></td></tr>
-<tr><td id='space' height=10>&nbsp;</td></tr>");
+
+");
 
 $sql = "SELECT * FROM topartikel";
 $res = mysqli_query($verbindung, $sql);

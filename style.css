@@ -1,12 +1,12 @@
 .lead {color: blue;}
-td, h4 {font-family: 'Raleway', sans-serif;}
+td, h4, h6{font-family: 'Raleway', sans-serif;}
 
 html {
     position: relative;
     min-height: 100%;
 }
 body {
-    /* Margin bottom by footer height */
+
     margin-bottom: 40px;
 }
 #footer {
@@ -17,8 +17,7 @@ body {
     height: 280px;
     background-color: #d7e9e7 ;
 }
-/* Custom footer CSS
--------------------------------------------------- */
+
 
 .container {
     width: auto;
