@@ -14,6 +14,6 @@ print ("<tr><td>$db_txtcontent1</td></tr>");
 include("include/pages0.php");
 include("include/right.php");
 include("include/footer.php");
-mysqli_close($verbindung);
+mysqli_close($verbindung );
 ?>
 1
