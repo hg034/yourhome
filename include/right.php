@@ -36,7 +36,7 @@ print ("
 <tr><td id='space' height=10>&nbsp;</td></tr>
 <tr><td id='navhead2' class='lead'>Shopinformationen</td></tr>
 <tr><td id='space' height=10>&nbsp;</td></tr>
-<tr><td id='navi1'><a href='index.php?sess=$sess&ts=$ts' onFocus='if (this.blur) this.blur() class='lead'>Startseite</a></td></tr>
+<tr><td id='navi1'><a href='index.php?sess=$sess&ts=$ts'  onFocus='if (this.blur) this.blur()'class='lead'>Startseite</a></td></tr>
 <tr><td id='navi1'><a href='zahlung.php?sess=$sess&ts=$ts'  onFocus='if (this.blur) this.blur()'class='lead'>Zahlung und Versand</a></td></tr>
 <tr><td id='navi1'><a href='widerrufsrecht.php?sess=$sess&ts=$ts'  onFocus='if (this.blur) this.blur()'class='lead'>Widerrufsrecht</a></td></tr>
 <tr><td id='navi1'><a href='agb.php?sess=$sess&ts=$ts'  onFocus='if (this.blur) this.blur()'class='lead'>AGB</a></td></tr>
