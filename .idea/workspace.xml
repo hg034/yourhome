@@ -195,7 +195,7 @@
       <updated>1516732803144</updated>
       <workItem from="1516732804518" duration="93000" />
       <workItem from="1517268124206" duration="532000" />
-      <workItem from="1517268937219" duration="827000" />
+      <workItem from="1517268937219" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary="Bild neu für Bootstrap">
       <created>1517268004936</created>
@@ -246,11 +246,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517353835916</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update Slider">
+      <created>1517353842133</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1517353842133</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1685000" />
+    <option name="totallyTimeSpent" value="1692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
