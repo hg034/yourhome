@@ -142,16 +142,16 @@ print ("
   <!-- Wrapper for slides -->
   <div class='carousel-inner' role='listbox'>
     <div class='item active'>
-       <img src='http://diamondcreative.net/plus-v1.1/img/slider/slider_06.jpg' width='1366px' height='700px'>
+       <img src='/home/hg034/public_html/yourhome/img/Inspiration.jpg' width='1400px' height='500px'>
       <div class='carousel-caption hidden-xs'>
-        <h3>New Collection touch of Chania</h3>
-        <p>The atmosphere in Chania has a touch<br> of Florence and Venice.</p>
-          <button class='btn btn-danger'>READ MORE</button>
+        <h3>Create your Home</h3>
+        <p>New Trends<br> 2018.</p>
+          <button class='btn btn-default'>Angebote</button>
       </div>
     </div>
 
     <div class='item'>
-      <img src='http://diamondcreative.net/plus-v1.1/img/slider/slider_03.jpg' width='1366px' height='700px'>
+        <img src='/home/hg034/public_html/yourhome/img/Inspiration.jpg' width='1400px' height='500px'>
       <div class='carousel-caption hidden-xs'>
         <h3>Create your Home</h3>
         <p>New Trends<br> 2018.</p>
