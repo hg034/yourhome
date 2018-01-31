@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48ea235d-e6f1-4638-b94a-6f69611cde30" name="Default" comment="">
+    <list default="true" id="48ea235d-e6f1-4638-b94a-6f69611cde30" name="Default" comment="Css update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
@@ -53,8 +53,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2505">
-              <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+            <state relative-caret-position="61">
+              <caret line="470" column="17" lean-forward="true" selection-start-line="470" selection-start-column="17" selection-end-line="470" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -202,7 +202,7 @@
       <updated>1516732803144</updated>
       <workItem from="1516732804518" duration="93000" />
       <workItem from="1517268124206" duration="532000" />
-      <workItem from="1517268937219" duration="903000" />
+      <workItem from="1517268937219" duration="1392000" />
     </task>
     <task id="LOCAL-00001" summary="Bild neu für Bootstrap">
       <created>1517268004936</created>
@@ -267,11 +267,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517353850639</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Css Slider">
+      <created>1517353928019</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1517353928019</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1761000" />
+    <option name="totallyTimeSpent" value="2250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -279,6 +286,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14652778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -309,7 +317,9 @@
     <MESSAGE value="Update Index Bootstrap Bild" />
     <MESSAGE value="Update Button, Font" />
     <MESSAGE value="Update Slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Slider" />
+    <MESSAGE value="Css Slider" />
+    <MESSAGE value="Css update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Css update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -457,8 +467,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2505">
-          <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        <state relative-caret-position="61">
+          <caret line="470" column="17" lean-forward="true" selection-start-line="470" selection-start-column="17" selection-end-line="470" selection-end-column="17" />
           <folding />
         </state>
       </provider>
